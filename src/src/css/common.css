@@ -23,7 +23,7 @@ button {
   cursor: pointer;
 }
 
-ul {
+.gallery {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -31,11 +31,11 @@ ul {
   gap: 60px;
 }
 
-li {
+.list {
   list-style: none;
 }
 
-img {
+.image {
   
   width: 450px;
 }
