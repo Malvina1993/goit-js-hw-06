@@ -4,10 +4,10 @@ const spanName = document.getElementById('name-output');
 inpData.addEventListener('input', onInputDataInput);
 
 function onInputDataInput(event) {
-    if (event.currentTarget.value === '') {
+    if (event.currentTarget.value.trim() === '') {
         spanName.textContent = 'Anonymous';
     } else {
-        spanName.textContent = event.currentTarget.value; 
+        spanName.textContent = event.currentTarget.value.trim(); 
     };
 };
 

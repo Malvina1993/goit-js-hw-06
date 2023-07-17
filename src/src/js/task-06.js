@@ -1,7 +1,7 @@
 const inpEl = document.getElementById('validation-input');
 
 inpEl.addEventListener('blur', function (event) {
-    if (event.currentTarget.value.length === 6) {
+    if (event.currentTarget.value.trim().length === 6) {
         inpEl.classList.add('valid');
         inpEl.classList.remove('invalid');
     } else {
