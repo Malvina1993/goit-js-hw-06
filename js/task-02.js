@@ -9,12 +9,17 @@ const ingredients = [
 
 const ulEl = document.getElementById('ingredients');
 
-const liEl = ingredients
-  .map(ingr => ingr = `<li class="item">${ingr}</li>`)
-  .join("");
+const fragment = document.createDocumentFragment(); 
+
+for (const elem of ingredients) {
+  const liEl = document.createElement('li');
+  liEl.textContent = `${elem}`;
+  liEl.classList.add('item');
+  fragment.appendChild(liEl);
+}
+
+ulEl.append(fragment);
 
 
-
-ulEl.insertAdjacentHTML('afterbegin', liEl);
 
 

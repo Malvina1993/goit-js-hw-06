@@ -10,6 +10,6 @@ console.log(`Number of categories: ${totalNumberOfCategories.length}`);
 // вкладених в нього).
 
 totalNumberOfCategories.forEach(numCateg => {
-    console.log('Category: ', numCateg.querySelector('h2').textContent);
-    console.log('Elements: ', numCateg.querySelectorAll('li').length);
+    console.log('Category: ', numCateg.firstElementChild.textContent);
+    console.log('Elements: ', numCateg.lastElementChild.children.length);
 });
